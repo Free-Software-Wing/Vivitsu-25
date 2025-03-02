@@ -1,0 +1,384 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&family=VT323&display=swap');
+
+/* Update the content-wrapper to create a two-column layout */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Update the content-wrapper to create a two-column layout */
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    z-index: 2;
+}
+
+/* Align text container to the left */
+.text-container {
+    font-family: "VT323", monospace, sans-serif;
+    color: rgb(217, 255, 0);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Dropping text animation container */
+.dropping-texts {
+    position: relative;
+    height: 80px; /* Increased height for better visibility */
+    overflow: hidden;
+}
+
+.dropping-texts > div {
+    font-size: 40px;
+    position: absolute;
+    opacity: 0;
+    animation: roll 8s linear infinite;
+    transform: translateY(-100%);
+}
+
+/* Updated animation keyframes */
+@keyframes roll {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    2% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    18% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+/* Individual animation delays */
+.dropping-texts > div:nth-child(1) { animation-delay: 0s; }
+.dropping-texts > div:nth-child(2) { animation-delay: 2s; }
+.dropping-texts > div:nth-child(3) { animation-delay: 4s; }
+.dropping-texts > div:nth-child(4) { animation-delay: 6s; }
+
+/* Event container styling */
+.Event-container {
+    width: 100%;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+/* Rest of your existing styles... */
+  
+
+  
+  /* Adjust text positioning */
+  .text-con {
+    position: relative;
+    font-size: 40px;
+    font-weight: 200;
+    left: 0;
+    top: 0;
+  }
+
+
+  
+  /* Position logo on the right side */
+  .Event-container {
+    width: 100%; /* Take full width of text container */
+    text-align: left;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 0;
+    font-size: 40px;
+    margin-top: 30px; 
+  }
+  
+  /* Fix the register button to the section */
+  .button-container {
+    position: absolute; /* Changed from fixed */
+    bottom: 50px;
+    left: 5%;
+    z-index: 10;
+  }
+  
+  
+  /* Make background section take full viewport */
+  .background-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Ensure SVG stays in background */
+  .background-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #ffedd3;
+    text-transform: uppercase;
+    position: absolute;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  
+  /* Button Hover Effects */
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: 0.5s ease;
+  }
+  
+  .btn:hover {
+    color: #1e1e2b;
+    transition-delay: 0.5s;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+  }
+  
+  /* =============================
+     GLITCH BUTTON STYLE
+     ============================= */
+  [class*="btn-glitch-"] {
+    display: inline-block;
+    font-family: "VT323", monospace;
+    border: 1px solid rgb(193, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 13px;
+    min-width: 175px;
+    line-height: 1.5em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+  }
+  
+  /* Ensure text and decoration styles apply */
+  .btn-glitch-fill .text,
+  .btn-glitch-fill .decoration {
+    display: inline-block;
+  }
+  
+  .btn-glitch-fill .decoration {
+    float: right;
+  }
+  
+  /* Hover and Focus Effects */
+  .btn-glitch-fill:hover,
+  .btn-glitch-fill:focus {
+    animation: glitch 0.2s;
+    background-color: yellow;
+    color: black;
+    border: 1px solid yellow;
+  }
+  
+  /* Blinking Effect */
+  .btn-glitch-fill:hover .text-decoration,
+  .btn-glitch-fill:hover .decoration {
+    animation: blink 0.1s infinite;
+  }
+  
+  /* Active (Click) Effect */
+  .btn-glitch-fill:active {
+    background: none;
+    color: yellow;
+  }
+  
+  
+  /* Preserve all original animations */
+  @keyframes glitch {
+    25% {
+      background-color: red;
+      transform: translateX(-10px);
+      letter-spacing: 10px;
+    }
+    35% {
+      background-color: green;
+      transform: translateX(10px);
+    }
+    59% {
+      opacity: 0;
+    }
+    60% {
+      background-color: blue;
+      transform: translateX(-10px);
+      filter: blur(5px);
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes floatLeftRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes roll {
+    0% {
+      font-size: 0px;
+      opacity: 0;
+      margin-left: -30px;
+      margin-top: 0px;
+      transform: rotate(-25deg);
+    }
+    3% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    5% {
+      font-size: inherit;
+      opacity: 1;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    20% {
+      font-size: inherit;
+      opacity: 1;
+      margin-left: 0px;
+      margin-top: 0px;
+      transform: rotate(0deg);
+    }
+    27% {
+      font-size: 0px;
+      opacity: 0.5;
+      margin-left: 20px;
+      margin-top: 100px;
+    }
+    100% {
+      font-size: 0px;
+      opacity: 0;
+      margin-left: -30px;
+      margin-top: 0px;
+      transform: rotate(15deg);
+    }
+  }
+  
+  /* Apply animations to SVG elements */
+  .out-top {
+    animation: floatUpDown 5s ease-in-out infinite;
+  }
+  
+  .in-top {
+    animation: floatLeftRight 4s ease-in-out infinite;
+  }
+  
+  .out-bottom {
+    animation: floatUpDown 6s ease-in-out infinite;
+  }
+  
+  .in-bottom {
+    animation: floatLeftRight 5s ease-in-out infinite;
+  }
+  
+  /* Dropping texts animation */
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .text-container,
+    .logo {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .text-con {
+      left: 0;
+      text-align: center;
+    }
+  
+    .logo {
+      padding-right: 0;
+    }
+  
+    .button-container {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  
