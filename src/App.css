@@ -1,5 +1,11 @@
 .app{
-    margin : 0;
+    margin : auto;
     margin-top: 0;
-    background-color: #ffe4c4;
+    width : 95rem;
+}
+@media(max-width : 600px) {
+    .app,.navbar{
+        width : 38rem
+    }
+    
 }
