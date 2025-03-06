@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-
+import styled from "styled-components";
 export default function Domains() {
   const [index, setIndex] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
@@ -49,9 +49,12 @@ export default function Domains() {
 
   return (
     <>
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 "  style={{
+          minHeight : "40rem",
+          padding : "2rem"
+      }}>
     <h1 className="text-4xl font-bold mb-4 text-center text-white">DOMAIN</h1>
-    <div className="relative flex items-center justify-center h-screen bg-gray-900 text-white overflow-hidden">
+    <div className="relative flex items-center justify-center h-72 text-white overflow-hidden">
       
       <button
         onClick={nextProduct} 
@@ -60,7 +63,9 @@ export default function Domains() {
         <FaArrowLeft />
       </button>
 
-      <div className="relative w-80 h-96 flex items-center justify-center">
+      <div className="relative w-80 h-96 flex items-center justify-center" style={{
+        
+      }}>
         <AnimatePresence mode="wait">
           <motion.div
             key={index}

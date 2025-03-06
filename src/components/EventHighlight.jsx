@@ -18,7 +18,7 @@ const EventHighlight = () => {
   };
 
   return (
-    <div className="flex flex-col items-center text-center my-10">
+    <div className="flex flex-col items-center text-center mt-25 my-10">
       <h2 className="text-3xl font-bold mb-6">Event Highlights</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {highlights.map((highlight, index) => (

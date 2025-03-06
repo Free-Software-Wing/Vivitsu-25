@@ -6,7 +6,7 @@ import Domains from "../components/Domainss";
 import SponsorsPage from "../components/Sponsors";
 export default function VivitsuMain(){
     return(
-        <div>
+        <div >
         <Vivitsu/>
         <Highlights/>
         <ScrollingText/>

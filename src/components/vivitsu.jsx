@@ -4,6 +4,7 @@ import "./vivitsu.css";
 export default function Vivitsu() {
     return(
         <div className="title">
+
             <div className="title1">
                 <h1>
                     <span>V</span>
@@ -18,6 +19,7 @@ export default function Vivitsu() {
                     <span>5</span>
                 </h1>
             </div>
+            
             <div class="button-wrapper">
             <button class="cta">
                 Register
