@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import GLOBE from "vanta/dist/vanta.globe.min";
 import * as THREE from "three";
-
+import Register from "../components/Register.jsx";
+import SplitText from "../components/SplitText";
 const Home = () => {
   const vantaRef = useRef(null);
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -35,6 +36,7 @@ const Home = () => {
 
   return (
     <>
+    
       {/* Main Container with Vanta Background */}
       <div ref={vantaRef} className="relative w-full h-screen overflow-hidden">
         {/* Heading Section */}
@@ -51,7 +53,7 @@ const Home = () => {
             transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
           >
             Free Software Wing!
-          </motion.h1>
+          </motion.h1> 
 
           <motion.p
             className="text-lg mt-2 text-gray-300"
@@ -62,6 +64,10 @@ const Home = () => {
             Promoting open-source innovation, collaboration, and software freedom.
           </motion.p>
         </motion.div>
+        {/* Register Button */}
+        <div className="absolute bottom-10 left-10 z-10">
+      <Register />
+        </div>
 
         {/* Logo */}
         <img
@@ -70,7 +76,6 @@ const Home = () => {
           className="absolute top-1/2 right-10 transform -translate-y-1/2 w-40 md:block hidden z-10 animate-pulse"
         />
       </div>
-
       {/* Who We Are Section */}
       <div className="flex flex-col items-center py-20 px-5 w-full bg-gradient-to-b from-gray-900 to-black text-white">
         <div className="text-center mb-10">
@@ -130,6 +135,8 @@ const Home = () => {
           </button>
         </div>
       </div>
+      
+      
     </>
   );
 };
