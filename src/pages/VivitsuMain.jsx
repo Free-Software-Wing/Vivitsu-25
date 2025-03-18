@@ -8,6 +8,8 @@ export default function VivitsuMain(){
     return(
         <div>
         <Vivitsu/>
+        <br />
+        <br />
         <Highlights/>
         <ScrollingText/>
         <Domains/>

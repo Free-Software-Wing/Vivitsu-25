@@ -11,8 +11,8 @@ const achievements = [
 ];
 const AboutUs = () => {
   return (
-    <div className="about-us mt-25">
-      <div className="about-us-vivitsu m-10 rounded-4xl bg-blue-300 p-10">
+    <div className="about-us" style={{margin:"7rem 2rem 7rem"}}>
+      <div className="about-us-vivitsu m-10 rounded-4xl bg-blue-300 p-10 " style={{marginBottom:"7rem"}}>
         <img src="images/logo.png" alt="" className="vivitsu-logo" />
         <h1 className="text-3xl text-center">VIVITSU</h1>
 
@@ -87,7 +87,8 @@ const AboutUs = () => {
       </div>
       <div className="py-16 m-4 text-center">
       <h2 className="text-4xl font-bold text-red-700 mb-8">Our Achievements</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <br /><br />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto" style={{margin:"auto"}}>
         {achievements.map((achievement, index) => (
           <div
             key={index}

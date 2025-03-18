@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
   background-size: cover; 
   background-position: center;
-  height: 95vh;  
+  height: 50rem;  
 
 }
 .title1{
@@ -99,7 +99,7 @@ span{
     top: 20px;
     color: white;
     display: inline-block;
-    font-size: 5rem;
+    font-size: 4rem;
     text-shadow: 0 1px 0 #b7b7b7,
     0 2px 0 #b7b7b7,
     0 3px 0 #b7b7b7,
@@ -129,4 +129,16 @@ span{
         0 9px 0 #ccc,
         0 60px 30px rgba(0, 0, 0, 0.3);
     }
+}
+@media (max-width: 600px) {
+.domain {
+  margin-top: 0;
+}
+.domain-container{
+  margin : 0;
+  height : 42rem
+}
+.sponer-name{
+font-size: 1.8rem;
+}
 }

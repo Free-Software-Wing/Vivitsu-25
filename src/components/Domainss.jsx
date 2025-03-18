@@ -49,18 +49,19 @@ export default function Domains() {
 
   return (
     <>
-    <div className="bg-gray-900">
-    <h1 className="text-4xl font-bold mb-4 text-center text-white">DOMAIN</h1>
-    <div className="relative flex items-center justify-center h-screen bg-gray-900 text-white overflow-hidden">
-      
+    <div className="bg-gray-900 domain">
+      <br /><br />
+
+    <h1 className="text-4xl font-bold  text-center text-white">DOMAIN</h1>
+    <div className="relative domain-container flex items-center h-100 justify-center  bg-grey-900 text-white overflow-hidden">
       <button
         onClick={nextProduct} 
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl hover:text-gray-400"
+        className="absolute left-4 top-2/3 transform -translate-y-1/2 text-white text-3xl hover:text-gray-400"
       >
         <FaArrowLeft />
       </button>
 
-      <div className="relative w-80 h-96 flex items-center justify-center">
+      <div className="relative w-80 flex items-center justify-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -75,7 +76,7 @@ export default function Domains() {
               alt={products[index].name}
               className="w-64 h-64 object-cover rounded-lg shadow-lg"
             />
-            <h2 className="text-2xl font-bold mt-4">{products[index].name}</h2>
+            <h2 className="text-2xl font-bold mt-4 text-center">{products[index].name}</h2>
 
        
             <div className="mt-2">
@@ -93,7 +94,7 @@ export default function Domains() {
 
       <button
         onClick={prevProduct} 
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl hover:text-gray-400"
+        className="absolute right-4 top-2/3 transform -translate-y-1/2 text-white text-3xl hover:text-gray-400"
       >
         <FaArrowRight />
       </button>

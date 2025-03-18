@@ -28,7 +28,7 @@ function Faqs() {
     for(let i=0;i<10;i++)
         list.push(<Faq/>);
   return (
-    <div className='faqs-container'>
+    <div className='faqs-container' style={{margin:"7rem 2rem 7rem"}}>
         {list.map(item=>item)}
     </div>
   )

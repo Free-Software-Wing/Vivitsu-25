@@ -8,6 +8,7 @@ const highlights = [
   { title: "Increase Your Network", img: "/images/network.png", text: "Meet new people and expand your network..." },
   { title: "Music and Dance Performance", img: "/images/music-dance.png", text: "Exciting music and dance performances..." },
   { title: "Fun Activities", img: "/images/fun-activities.png", text: "Participate in fun activities and games..." },
+  { title: "Fun Activities", img: "/images/fun-activities.png", text: "Participate in fun activities and games..." },
 ];
 
 const EventHighlight = () => {
@@ -18,8 +19,9 @@ const EventHighlight = () => {
   };
 
   return (
-    <div className="flex flex-col items-center text-center my-10">
-      <h2 className="text-3xl font-bold mb-6">Event Highlights</h2>
+    <div className="flex flex-col items-center text-center " style={{margin:"7rem 2rem 7rem"}}>
+      <h2 className="text-3xl font-bold mb-6 text-white">Event Highlights</h2>
+      <br /><br />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {highlights.map((highlight, index) => (
           <div
@@ -43,6 +45,7 @@ const EventHighlight = () => {
           </div>
         ))}
       </div>
+      <br /><br />
       <button className="mt-6 px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition">
         READ MORE
       </button>

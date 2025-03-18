@@ -8,11 +8,12 @@ import Home from "./pages/Home.jsx";
 import Footer from "./components/Footer.jsx";
 import VivitsuMain from "./pages/VivitsuMain.jsx";
 import ParticleBackground from "./components/ParticleBackground.jsx";
+import "./App.css";
 // Particle Background Component
 
 function App() {
   return (
-    <>
+    <div className="app">
       {/* Particle Background */}
       <ParticleBackground />
       
@@ -25,7 +26,7 @@ function App() {
         <Route path="/vivitsu" element={<VivitsuMain />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 

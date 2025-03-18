@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <>
       {/* Main Container with Vanta Background */}
-      <div ref={vantaRef} className="relative w-full h-screen overflow-hidden">
+      <div ref={vantaRef} className="relative w-full h-200 overflow-hidden">
         {/* Heading Section */}
         <motion.div
           className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white z-10"
@@ -77,7 +77,7 @@ const Home = () => {
           <h2 className="text-4xl font-bold">WHO WE ARE?</h2>
           <div className="w-16 h-1 bg-blue-500 mx-auto rounded-2xl mt-2"></div>
         </div>
-
+        <br /><br />
         <div className="flex flex-col md:flex-row justify-center gap-8">
           {/* Vision Card */}
           <div className="bg-gray-800 shadow-lg p-6 rounded-lg max-w-lg transition-transform duration-300 hover:scale-105">
@@ -125,6 +125,7 @@ const Home = () => {
           <p className="mt-4 text-gray-300">
             Join our growing community of tech enthusiasts and developers.
           </p>
+          <br/>
           <button className="mt-6 bg-blue-500 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-600 transition hover:scale-105 active:scale-95">
             JOIN US NOW
           </button>

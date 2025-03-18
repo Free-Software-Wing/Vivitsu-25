@@ -1,72 +1,42 @@
-import { color } from 'framer-motion';
 import React from 'react';
 
 function Highlights() {
-  const circleStyle = {
-    height: '200px',
-    width: '200px',
-    borderRadius: '50%',
-    backgroundColor: 'white',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  };
-
-  const imageStyle = {
-    height: '200px',
-    width: '200px',
-    borderRadius: '50%',
-    objectFit: 'cover',
-  };
-
-  const textStyle = {
-    textAlign: 'center',
-    fontSize: '18px',
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color:'white'
-  };
-
   return (
-    <div>
-      <h1 className="text-5xl font-bold mb-1 flex flex-col items-center text-center my-5 font-playfair-display text-white">EVENT HIGHLIGHTS</h1>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', marginTop: '25px' }}>
-        <div style={{ display: 'flex', gap: '70px', marginBottom: '70px' }}>
-          <div>
-            <div style={circleStyle}> <img src="video1.gif" alt="gif1" style={imageStyle} /> </div>
-            <div style={textStyle}>24 Hours Hackathon</div>
-          </div>
-          <div>
-            <div style={circleStyle}> <img src="img7.png" alt="gif5" style={imageStyle} /></div>
-            <div style={textStyle}>Food and Wifi</div>
-          </div>
-          <div>
-            <div style={circleStyle}> <img src="video2.gif" alt="gif3" style={imageStyle} /></div>
-            <div style={textStyle}>Open Source Software</div>
-          </div>
-          <div>
-            <div style={circleStyle}> <img src="video4.gif" alt="gif3" style={imageStyle} /></div>
-            <div style={textStyle}>Increase Your Network</div>
-          </div>
+    <div className="flex flex-col items-center text-center my-5">
+      <h1 className="text-4xl md:text-5xl font-bold mb-5 font-playfair-display text-white">
+        EVENT HIGHLIGHTS
+      </h1>
+<br /><br />
+      <div className="flex flex-col items-center gap-10 mt-6">
+        {/* First Row */}
+        <div className="flex flex-wrap justify-center gap-10 lg:gap-16">
+          <HighlightItem img="video1.gif" text="24 Hours Hackathon" />
+          <HighlightItem img="img7.png" text="Food and Wifi" />
+          <HighlightItem img="video2.gif" text="Open Source Software" />
+          <HighlightItem img="video4.gif" text="Increase Your Network" />
         </div>
 
-        <div style={{ display: 'flex', gap: '70px',marginBottom: '100px' }}>
-          <div>
-            <div style={circleStyle}><img src="video6.gif" alt="gif5" style={imageStyle} /></div>
-            <div style={textStyle}>Fun Activities</div>
-          </div>
-          <div>
-            <div style={circleStyle}> <img src="video5.gif" alt="gif5" style={imageStyle} /></div>
-            <div style={textStyle}>Culturals</div>
-          </div>
-          <div>
-            <div style={circleStyle}> <img src="video3.gif" alt="gif3" style={imageStyle} /></div>
-            <div style={textStyle}>Hangout With Friends</div>
-          </div>
+        {/* Second Row */}
+        <div className="flex flex-wrap justify-center gap-10 lg:gap-16">
+          <HighlightItem img="video6.gif" text="Fun Activities" />
+          <HighlightItem img="video5.gif" text="Culturals" />
+          <HighlightItem img="video3.gif" text="Hangout With Friends" />
         </div>
       </div>
+      <br /><br />
     </div>
   );
 }
+
+const HighlightItem = ({ img, text }) => {
+  return (
+    <div className="flex flex-col items-center ">
+      <div className="h-40 w-40  md:h-48 md:w-48 lg:h-52 lg:w-52 rounded-full bg-white flex justify-center items-center shadow-lg">
+        <img src={img} alt={text} className="h-full w-full rounded-full object-cover" />
+      </div>
+      <div className="text-white text-lg font-bold mt-3 text-center">{text}</div>
+    </div>
+  );
+};
 
 export default Highlights;

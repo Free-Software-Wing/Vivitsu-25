@@ -1,0 +1,20 @@
+.app{
+    max-width : 100rem;
+    height : auto;
+    margin : auto;
+    overflow: hidden;
+    position: relative;
+}
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .app {
+        width: 100%;
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    .app {
+        width : 100%;
+    }
+}

@@ -7,7 +7,7 @@ const ParticleBackground = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     let particlesArray = [];
-    const numberOfParticles = 150;
+    const numberOfParticles = 500;
 
     // Resize Canvas
     const resizeCanvas = () => {
@@ -97,8 +97,8 @@ const ParticleBackground = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10"
-      style={{ background: "radial-gradient(circle at center, #00274d, #000)" }}
+      className="fixed  overflow-hidden -z-10"
+      style={{ background: "radial-gradient(circle at center, #00274d, #000)" ,width:"100rem",height:"100vh"}}
     />
   );
 };
