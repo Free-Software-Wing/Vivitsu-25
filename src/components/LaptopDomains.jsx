@@ -18,7 +18,7 @@ function Laptop({ neonTextClass, neonGlowClass }) {
   }, []);
 
   //const clampedProgress = Math.min(scrollProgress, 70);
-  const laptopAngle = Math.max(0, 200 - (200 * Math.min(scrollProgress, 70)) / 70);
+  const laptopAngle = Math.max(0, 300 - (300 * Math.min(scrollProgress, 63)) / 63);
 
   return (
     <div className="min-h-[150vh] relative bg-transparent flex flex-col items-center justify-center">
