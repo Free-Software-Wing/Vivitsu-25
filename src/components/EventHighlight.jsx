@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Web from "./Web";
 import { supabase } from "../backend/supabaseClient.js";
 
-const events = [
+const events = [  
   { date: "28-03-2024", title: "Foss-Fest", description: "FOSSFEST is an event organized by the Free Software Wing (FSW) to promote the use and awareness of free and open-source software. It brings together students, tech enthusiasts, and industry experts through expert talks, interactive competitions, and engaging activities. The event fosters a strong open-source community and encourages participants to embrace free software solutions.", image: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_8000,h_4500,g_auto/v1743865273/IMG_7875_z7xpwt.jpeg" },
   { date: "19,20-04-2024 ", title: "Vivitsu 24", description: "Vivitsu'24, the flagship event of the Free Software Wing (FSW), was a grand celebration of open-source innovation across diverse domains like healthcare, travel & tourism, open innovation, smart automation, and agrotech. With expert speakers and engaging competitions, the event provided a platform for students to explore and implement free software solutions. Backed by strong faculty support, Vivitsu'24 witnessed enthusiastic participation, fostering a vibrant tech community. The event's success reinforced FSW's commitment to promoting open-source culture on campus.", image: "1.jpg" },
   { date: "05-12-2023 ", title: "Cyber-Bloom", description: "At the onset of the Cyber Bloom event, attendees were required to install essential Software tools are VMware, kali,metasploitable designated for the occasion. Subsequently, the Cyber Bloom organizing team delivered comprehensive tutorials, guiding participants through practical applications, including threat detection, encryption, and secure data handling. ", image: "https://res.cloudinary.com/dpa0sb1tm/image/upload/v1743865114/Screenshot_2025-04-05_202817_vxmn0s.png" },
@@ -13,14 +13,14 @@ const events = [
 
 const upcomingEvent = {
   date: "22-08-2025",
-  title: "Cyber security ",
-  shortDescription: "Join us for an exciting Cyber Security Workshop — unlock the secrets of digital defense and safeguard your future online!",
-  fullDescription: "Cyber Security Workshop 2025 brings hands-on training, expert insights, and real-world challenges to help you strengthen your digital defense skills.",
-  image: "https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/stock-assets/adb-stk/ul/g/af/35/adobestock_857262714.component.crop-2by1-xl.ts=1754491820905.jpeg/content/adobe-cms/us/en/think/topics/cybersecurity/jcr:content/root/leadspace_container/leadspace_article",
+  title: "LLM & API Key Workshop",
+  shortDescription: "Unlock the power of Large Language Models and learn how to use API keys securely in your projects!",
+  fullDescription: "Dive into the world of LLMs (Large Language Models) and APIs. This workshop covers hands-on integration, best practices for API key management, and real-world demos to supercharge your apps with AI.",
+  image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
   venue: "Hall 1, GRIET",
   time: "9:00 AM - 3:30 PM",
   registrationDeadline: "22-08-2025",
-  amount: "₹150", 
+  amount: "₹150",
   upiQrCode: "https://storage.googleapis.com/dara-c1b52.appspot.com/daras_ai/media/a3202e58-17ef-11ee-9a70-8e93953183bb/cleaned_qr.png" 
 };
 
@@ -607,11 +607,12 @@ const UpcomingEventCard = ({ event }) => {
                 color: 'rgba(255, 255, 255, 0.8)',
                 margin: '0 0 20px 0',
                 fontSize: window.innerWidth <= 768 ? '14px' : '16px',
-                lineHeight: '1.5'
+                lineHeight: '1.5',
+                textAlign: 'left'
               }}>
                 {event.shortDescription}
               </p>
-              <div style={{ marginBottom: '20px' }}>
+              <div style={{ marginBottom: '20px', textAlign: 'left' }}>
                 <div style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: window.innerWidth <= 768 ? '12px' : '14px', marginBottom: '5px' }}>
                   📍 {event.venue}
                 </div>

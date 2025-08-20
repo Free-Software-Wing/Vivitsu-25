@@ -106,6 +106,7 @@ const AdminPanel = () => {
         >
           <option value="">All Events</option>
           <option value="Cyber security">Cyber security</option>
+          <option value="LLM & API Key Workshop">LLM & API Key Workshop</option>
           {/* Add other event titles as needed */}
         </select>
         
