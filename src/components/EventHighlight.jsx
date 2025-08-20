@@ -20,8 +20,8 @@ const upcomingEvent = {
   venue: "Hall 1, GRIET",
   time: "9:00 AM - 3:30 PM",
   registrationDeadline: "22-08-2025",
-  amount: "₹150",
-  upiQrCode: "https://storage.googleapis.com/dara-c1b52.appspot.com/daras_ai/media/a3202e58-17ef-11ee-9a70-8e93953183bb/cleaned_qr.png" 
+  amount: "₹120",
+  upiQrCode: "https://res.cloudinary.com/dpa0sb1tm/image/upload/v1755700996/Screenshot_2025-08-20_201225_bqpjwg.png" 
 };
 
 const RegistrationForm = ({ isOpen, onClose, event }) => {
