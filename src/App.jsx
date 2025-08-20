@@ -6,6 +6,8 @@ import Footer from "./components/Footer.jsx";
 import VivitsuMain from "./pages/VivitsuMain.jsx";
 import ParticleBackground from "./components/ParticleBackground.jsx";
 import Team from "./pages/Team.jsx";
+import AdminPanel from "./pages/AdminPanel.jsx";
+
 // Particle Background Component
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path="/events" element={<EventHighlight />} />
         <Route path="/vivitsu" element={<VivitsuMain />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/admin" element={<AdminPanel />} />
       </Routes>
       <Footer />
     </>
