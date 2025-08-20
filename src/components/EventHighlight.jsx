@@ -16,7 +16,7 @@ const upcomingEvent = {
   title: "LLM & API Key Workshop",
   shortDescription: "Unlock the power of Large Language Models and learn how to use API keys securely in your projects!",
   fullDescription: "Dive into the world of LLMs (Large Language Models) and APIs. This workshop covers hands-on integration, best practices for API key management, and real-world demos to supercharge your apps with AI.",
-  image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+  image: "https://pixelplex.io/wp-content/uploads/2024/01/llm-applications-main.jpg",
   venue: "Hall 1, GRIET",
   time: "9:00 AM - 3:30 PM",
   registrationDeadline: "22-08-2025",
