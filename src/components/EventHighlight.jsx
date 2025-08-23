@@ -3,25 +3,69 @@ import Web from "./Web";
 import { supabase } from "../backend/supabaseClient.js";
 
 const events = [  
-  { date: "28-03-2024", title: "Foss-Fest", description: "FOSSFEST is an event organized by the Free Software Wing (FSW) to promote the use and awareness of free and open-source software. It brings together students, tech enthusiasts, and industry experts through expert talks, interactive competitions, and engaging activities. The event fosters a strong open-source community and encourages participants to embrace free software solutions.", image: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_8000,h_4500,g_auto/v1743865273/IMG_7875_z7xpwt.jpeg" },
-  { date: "19,20-04-2024 ", title: "Vivitsu 24", description: "Vivitsu'24, the flagship event of the Free Software Wing (FSW), was a grand celebration of open-source innovation across diverse domains like healthcare, travel & tourism, open innovation, smart automation, and agrotech. With expert speakers and engaging competitions, the event provided a platform for students to explore and implement free software solutions. Backed by strong faculty support, Vivitsu'24 witnessed enthusiastic participation, fostering a vibrant tech community. The event's success reinforced FSW's commitment to promoting open-source culture on campus.", image: "1.jpg" },
-  { date: "05-12-2023 ", title: "Cyber-Bloom", description: "At the onset of the Cyber Bloom event, attendees were required to install essential Software tools are VMware, kali,metasploitable designated for the occasion. Subsequently, the Cyber Bloom organizing team delivered comprehensive tutorials, guiding participants through practical applications, including threat detection, encryption, and secure data handling. ", image: "https://res.cloudinary.com/dpa0sb1tm/image/upload/v1743865114/Screenshot_2025-04-05_202817_vxmn0s.png" },
-  { date: "28,29-03-2023", title: "VIVITSU 1.0 ", description: "The hackathon began with participants selecting from 10 predefined problem statements posted online. After a code of conduct briefing at 10:00 AM on April 28, the first evaluation round commenced at 11:00 AM. To maintain energy and engagement, meals (lunch, dinner, and breakfast) were provided, along with fun nighttime activities. The final jury evaluation occurred at 11:30 AM on April 29, followed by result announcements post-lunch. Winning teams received ₹10,000 per problem statement, culminating in a total prize pool of ₹1 lakh. The event concluded with a vote of thanks by the FSW coordinator.", image: "vi1.0.png" },
-  { date: "17-11-2022 ", title: "Tech Bola 2.0", description: "The event featured an interactive ticket-based game where participants marked answers on their cards as questions were read. Prizes were awarded for being first to mark 5 correct answers, completing any row, or finishing the entire ticket. The HoD of IT and FSW Faculty Coordinator presented gifts to winners, with refreshments served during the event.", image: "tb2.0.png" },
-  { date: "19-08-2022 ", title: "Photo Fiesta", description: "The event began with participants installing GIMP, a free and open-source image editing software, to prepare for the workshop. The FSW team then conducted an interactive walkthrough of the software, demonstrating key features through hands-on tutorials that covered practical applications like background removal, watermark removal, and GIF creation. Throughout the session, team members provided individual assistance, ensuring participants could follow along while promptly addressing any questions or difficulties. The event concluded with the recognition of the top three submissions, which were awarded prizes based on creativity and technical execution.", image: "pf.png" },
+  { 
+    date: "22-08-2025",
+    title: "Fusion Tech",
+    description: "Dive into the world of LLMs (Large Language Models) and APIs. This workshop covered hands-on integration, best practices for API key management, and real-world demos to supercharge apps with AI.",
+    image: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_4400,h_2500,g_auto/v1755937033/DSCN2172_lfa5dx.jpg"
+  },
+  { 
+    date: "09,10-04-2025", 
+    title: "Vivitsu 25", 
+    description: "Vivitsu'25 continues the tradition of fostering open-source innovation, collaboration, and problem-solving. Featuring hackathons, workshops, and expert sessions across multiple domains, it provides students and developers a platform to showcase creativity and technical skills while embracing free software solutions.", 
+    image: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_1080,h_643,g_auto/v1755935129/bf9ddfe4-e4d3-4a36-9711-5c551e61ea5d_aaaqf7.jpg" 
+  },
+  { 
+    date: "28-03-2024", 
+    title: "Foss-Fest", 
+    description: "FOSSFEST is an event organized by the Free Software Wing (FSW) to promote the use and awareness of free and open-source software. It brings together students, tech enthusiasts, and industry experts through expert talks, interactive competitions, and engaging activities. The event fosters a strong open-source community and encourages participants to embrace free software solutions.", 
+    image: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_8000,h_4500,g_auto/v1743865273/IMG_7875_z7xpwt.jpeg" 
+  },
+  { 
+    date: "19,20-04-2024", 
+    title: "Vivitsu 24", 
+    description: "Vivitsu'24, the flagship event of the Free Software Wing (FSW), was a grand celebration of open-source innovation across diverse domains like healthcare, travel & tourism, open innovation, smart automation, and agrotech. With expert speakers and engaging competitions, the event provided a platform for students to explore and implement free software solutions. Backed by strong faculty support, Vivitsu'24 witnessed enthusiastic participation, fostering a vibrant tech community. The event's success reinforced FSW's commitment to promoting open-source culture on campus.", 
+    image: "1.jpg" 
+  },
+  { 
+    date: "05-12-2023", 
+    title: "Cyber-Bloom", 
+    description: "At the onset of the Cyber Bloom event, attendees were required to install essential Software tools are VMware, kali,metasploitable designated for the occasion. Subsequently, the Cyber Bloom organizing team delivered comprehensive tutorials, guiding participants through practical applications, including threat detection, encryption, and secure data handling.", 
+    image: "https://res.cloudinary.com/dpa0sb1tm/image/upload/v1743865114/Screenshot_2025-04-05_202817_vxmn0s.png" 
+  },
+  { 
+    date: "28,29-03-2023", 
+    title: "VIVITSU 1.0", 
+    description: "The hackathon began with participants selecting from 10 predefined problem statements posted online. After a code of conduct briefing at 10:00 AM on April 28, the first evaluation round commenced at 11:00 AM. To maintain energy and engagement, meals (lunch, dinner, and breakfast) were provided, along with fun nighttime activities. The final jury evaluation occurred at 11:30 AM on April 29, followed by result announcements post-lunch. Winning teams received ₹10,000 per problem statement, culminating in a total prize pool of ₹1 lakh. The event concluded with a vote of thanks by the FSW coordinator.", 
+    image: "vi1.0.png" 
+  },
+  { 
+    date: "17-11-2022", 
+    title: "Tech Bola 2.0", 
+    description: "The event featured an interactive ticket-based game where participants marked answers on their cards as questions were read. Prizes were awarded for being first to mark 5 correct answers, completing any row, or finishing the entire ticket. The HoD of IT and FSW Faculty Coordinator presented gifts to winners, with refreshments served during the event.", 
+    image: "tb2.0.png" 
+  },
+  { 
+    date: "19-08-2022", 
+    title: "Photo Fiesta", 
+    description: "The event began with participants installing GIMP, a free and open-source image editing software, to prepare for the workshop. The FSW team then conducted an interactive walkthrough of the software, demonstrating key features through hands-on tutorials that covered practical applications like background removal, watermark removal, and GIF creation. Throughout the session, team members provided individual assistance, ensuring participants could follow along while promptly addressing any questions or difficulties. The event concluded with the recognition of the top three submissions, which were awarded prizes based on creativity and technical execution.", 
+    image: "pf.png" 
+  }
 ];
 
+
+// if any event is there check line number 676
 const upcomingEvent = {
-  date: "22-08-2025",
-  title: "LLM & API Key Workshop",
-  shortDescription: "Unlock the power of Large Language Models and learn how to use API keys securely in your projects!",
-  fullDescription: "Dive into the world of LLMs (Large Language Models) and APIs. This workshop covers hands-on integration, best practices for API key management, and real-world demos to supercharge your apps with AI.",
-  image: "https://pixelplex.io/wp-content/uploads/2024/01/llm-applications-main.jpg",
-  venue: "Hall 1, GRIET",
-  time: "9:00 AM - 3:30 PM",
-  registrationDeadline: "22-08-2025",
-  amount: "₹120",
-  upiQrCode: "https://res.cloudinary.com/dpa0sb1tm/image/upload/v1755700996/Screenshot_2025-08-20_201225_bqpjwg.png" 
+  // date: "22-08-2025",
+  title: "Coming Soon",
+  shortDescription: "Stay tuned for our next exciting event from Free Software Wing!",
+  fullDescription: "Stay tuned for our next exciting event from Free Software Wing!",
+  image: "https://media.gettyimages.com/id/1469393237/video/4k-glowing-yellow-neon-text-coming-soon.jpg?s=640x640&k=20&c=dzDQuuUIod8gcf-EXQzeEXaz0iHZA6hXLn39p6QdJeI=",
+  // venue: "Hall 1, GRIET",
+  // time: "9:00 AM - 3:30 PM",
+  // registrationDeadline: "22-08-2025",
+  // amount: "₹120",
+  // upiQrCode: "https://res.cloudinary.com/dpa0sb1tm/image/upload/v1755700996/Screenshot_2025-08-20_201225_bqpjwg.png" 
 };
 
 const RegistrationForm = ({ isOpen, onClose, event }) => {
@@ -234,7 +278,7 @@ const RegistrationForm = ({ isOpen, onClose, event }) => {
               <h3 style={{ color: 'white', marginTop: 0 }}>Payment Information</h3>
               <div style={{ marginBottom: '15px' }}>
                 <strong style={{ color: '#00f7ff' }}>Registration Fee: </strong>
-                <span style={{ color: 'white' }}>{event.amount || '₹150'}</span>
+                <span style={{ color: 'white' }}>{event.amount || ''}</span>
               </div>
               
               <p style={{ color: 'rgba(255, 255, 255, 0.8)', margin: '10px 0', fontSize: '14px' }}>
@@ -243,7 +287,7 @@ const RegistrationForm = ({ isOpen, onClose, event }) => {
               
               <div style={{ textAlign: 'center', marginTop: '15px' }}>
                 <img 
-                  src={event.upiQrCode || "https://storage.googleapis.com/dara-c1b52.appspot.com/daras_ai/media/a3202e58-17ef-11ee-9a70-8e93953183bb/cleaned_qr.png"} 
+                  src={event.upiQrCode || ""} 
                   alt="UPI QR Code" 
                   style={{ 
                     maxWidth: '100%', 
@@ -626,11 +670,12 @@ const UpcomingEventCard = ({ event }) => {
                 )}
               </div>
             </div>
-
+            
+            {/* registration button of event */}
             <button
-              onClick={() => setIsFormOpen(true)}
+              onClick={() => setIsFormOpen(false)}   //if any event is there set the false to true else keep it false
               style={{
-                background: 'linear-gradient(45deg, #00f7ff, #0099cc)', //changes have been done till here
+                background: 'linear-gradient(45deg, #00f7ff, #0099cc)', 
                 border: 'none',
                 borderRadius: '25px',
                 color: 'white',
