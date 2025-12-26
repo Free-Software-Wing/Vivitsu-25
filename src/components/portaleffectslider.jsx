@@ -45,7 +45,7 @@ const PortalEffectSlider = () => {
     <div className="container mx-auto text-center p-10">
       {/* Bigger Title with More Gap */}
       <h1 className="text-4xl font-bold mb-10 text-white drop-shadow-[0_0_15px_#00FFFF]">
-        Insights of VIVITSU 2024
+        Insights of VIVITSU 2025
       </h1>
 
       {/* Image Slider */}

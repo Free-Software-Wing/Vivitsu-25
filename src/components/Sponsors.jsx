@@ -3,21 +3,6 @@ import { motion } from "framer-motion";
 export default function SponsorsPage() {
   const sponsors = [
     {
-      name: "Imperial ",
-      logo: "https://www.imperial-overseas.com/assets/image/logo-dark.webp",
-      link: "https://www.imperial-overseas.com/",
-    },
-    {
-      name: "Smaash",
-      logo: "https://smaaash-entertainment.in/assets/img/newsmaaashlogotwo.png.jpg",
-      link: "https://smaaash-entertainment.in/",
-    },
-    {
-      name: "Dr. Madhu Thumu",
-      logo: "https://drmadhuthumu.com/wp-content/uploads/2020/12/dr-madhu-thumu-orthopedist.png",
-      link: "https://drmadhuthumu.com/",
-    },
-    {
       name: "CodeGnan",
       logo: "https://media.licdn.com/dms/image/v2/C510BAQE2dFd6hMRZmw/company-logo_200_200/company-logo_200_200/0/1630626957056/codegnan_logo?e=2147483647&v=beta&t=DN4ALlhbDlbf9h0bk23HqwWMhtkTgVlKZlrgCMBPoLE",
       link: "https://codegnan.com/",
@@ -52,7 +37,8 @@ export default function SponsorsPage() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.15, rotate: 2 }}
             whileTap={{ scale: 0.9 }}
-            className="flex flex-col items-center transition duration-300"
+            className="flex flex-col items-center"
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
           >
             <motion.img
               src={sponsor.logo}
