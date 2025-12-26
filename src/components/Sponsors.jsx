@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 export default function SponsorsPage() {
   const sponsors = [
     {
-      name: "CodeGnan",
-      logo: "https://media.licdn.com/dms/image/v2/C510BAQE2dFd6hMRZmw/company-logo_200_200/company-logo_200_200/0/1630626957056/codegnan_logo?e=2147483647&v=beta&t=DN4ALlhbDlbf9h0bk23HqwWMhtkTgVlKZlrgCMBPoLE",
-      link: "https://codegnan.com/",
+      // EXAMPLE:
+      // name: "CodeGnan",
+      // logo: "https://media.licdn.com/dms/image/v2/C510BAQE2dFd6hMRZmw/company-logo_200_200/company-logo_200_200/0/1630626957056/codegnan_logo?e=2147483647&v=beta&t=DN4ALlhbDlbf9h0bk23HqwWMhtkTgVlKZlrgCMBPoLE",
+      // link: "https://codegnan.com/",
     },
   ];
 

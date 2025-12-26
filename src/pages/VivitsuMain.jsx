@@ -2,12 +2,9 @@ import Highlights from "../components/Highlights";
 import Vivitsu from "../components/vivitsu";
 import AboutPage from "../components/aboutvivitsu";
 import ScrollingText from "../components/ScrollingText";
-// import Domains from "../components/Domainss";
 import SponsorsPage from "../components/Sponsors";
 import DomainsCarousel from '../components/Domains2';
 import Timeline from "../components/timeline";
-//import Laptop from "../components/LaptopDomains";
-//import BowlingEffect from "../components/smaash";
 import PortalEffectSlider from "../components/portaleffectslider";
 import VivitsuDetails from "../components/vivitsu/VivitsuDetails";
 
