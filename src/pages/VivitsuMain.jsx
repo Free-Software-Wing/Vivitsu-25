@@ -14,8 +14,6 @@ export default function VivitsuMain() {
             <Vivitsu />
             <VivitsuDetails />
             <Highlights />
-            {/* <ScrollingText/> */}
-            {/* <Domains/> */}
             <div className="container mx-auto px-4 py-20 relative z-10">
                 <h2 className="text-6xl font-extrabold text-center mb-12 text-white drop-shadow-[0_0_20px_#00BFFF]">
                     Domains
@@ -24,6 +22,7 @@ export default function VivitsuMain() {
                 <DomainsCarousel />
                 <Timeline />
             </div>
+            {/* just add sponers in ../components/sponsors and remove this line from comment for adding sponsers */}
             {/* <SponsorsPage /> */}
             <PortalEffectSlider />
 

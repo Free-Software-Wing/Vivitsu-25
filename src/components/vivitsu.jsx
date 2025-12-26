@@ -159,7 +159,7 @@ export default function Vivitsu() {
           }}
           onClick={() =>
             window.open(
-              "https://unstop.com/hackathons/vivitsu-2025-national-level-24-hour-hackathon-gokaraju-rangaraju-institute-of-engineering-and-technology-grie-1419715",
+              "https://unstop.com/o/Ro1FhxZ?utm_medium=Share&utm_source=freewin1161&utm_campaign=Online_coding_challenge",
               "_blank"
             )
           }
