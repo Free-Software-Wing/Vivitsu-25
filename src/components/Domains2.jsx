@@ -8,7 +8,7 @@ const domains = [
     description:
       "Build groundbreaking solutions across any domain. Let your creativity run wild and innovate without boundaries.",
     gif: "https://i.gifer.com/74pZ.gif",
-    backText: "Open Innovation text -1",
+    backText: "Example Problem Statement: Design a hyperlocal solution to connect surplus food from restaurants to local shelters efficiently.",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const domains = [
     description:
       "Create innovative solutions for healthcare challenges. From patient care to medical technology, make a difference in healthcare.",
     gif: "https://i.gifer.com/7BZb.gif",
-    backText: "Healthcare text -1",
+    backText: "Example Problem Statement: Create an AI-powered diagnostic tool for early detection of skin diseases using smartphone cameras.",
   },
   {
     id: 3,
@@ -24,23 +24,23 @@ const domains = [
     description:
       "Revolutionize learning through technology. Develop solutions that make education more accessible, engaging, and effective.",
     gif: "https://i.gifer.com/Ybin.gif",
-    backText: "Smart Education text -1",
+    backText: "Example Problem Statement: Develop an AI tutor that adapts to the learning pace and style of neurodivergent students.",
   },
   {
     id: 4,
-    title: "Heritage and Culture Preservation",
+    title: "FinTech",
     description:
-      "Develop solutions that protect and promote cultural heritage, ensuring that traditions and history are preserved for future generations.",
-    gif: "https://i.gifer.com/HAFq.gif",
-    backText: "AI-powered tool to digitally restore and preserve ancient manuscripts.",
+      "Revolutionize the financial world with technology. Build secure, scalable, and inclusive financial solutions for the future economy.",
+    gif: "https://images.squarespace-cdn.com/content/v1/5feb53185d3dab691b47361b/1609930695341-BFSP2KYY1MI5SJVKUDO1/35f32-dataprivacyandregulationfintechs.gif",
+    backText: "Example Problem Statement: Create a decentralized identity verification system for seamless cross-border payments.",
   },
   {
     id: 5,
-    title: "Legal Awareness and Civic Governance",
+    title: "Sustainable and Agro-Tech",
     description:
-      "Empower communities with knowledge of their legal rights and responsibilities while enhancing civic engagement and governance.",
-    gif: "https://i.gifer.com/Lrbo.gif",
-    backText: "Legal Awareness text -1",
+      "Bridge technology with nature. Develop sustainable solutions for smart farming, environmental conservation, and renewable energy.",
+    gif: "https://cdn.dribbble.com/userupload/24439185/file/original-2c9b06bf14c1c8732d59221e3c498f9f.gif",
+    backText: "Example Problem Statement: Design a smart irrigation system that optimizes water usage based on real-time weather data.",
   },
 ];
 
@@ -77,21 +77,19 @@ const DomainsCarousel = () => {
           return (
             <div
               key={domain.id}
-              className={`absolute w-full max-w-3xl transition-all duration-500 ease-in-out ${
-                position === "center"
-                  ? "opacity-100 transform translate-x-0 scale-100 z-20"
-                  : position === "right"
+              className={`absolute w-full max-w-3xl transition-all duration-500 ease-in-out ${position === "center"
+                ? "opacity-100 transform translate-x-0 scale-100 z-20"
+                : position === "right"
                   ? "opacity-50 transform translate-x-[60%] scale-95 z-10"
                   : position === "left"
-                  ? "opacity-50 transform -translate-x-[60%] scale-95 z-10"
-                  : "opacity-0 transform scale-75 z-0"
-              }`}
+                    ? "opacity-50 transform -translate-x-[60%] scale-95 z-10"
+                    : "opacity-0 transform scale-75 z-0"
+                }`}
               onClick={() => isCenter && setFlippedIndex(isFlipped ? null : index)}
             >
               <div
-                className={`relative w-full h-[400px] rounded-2xl border border-blue-800/30 transition-transform duration-500 transform ${
-                  isFlipped ? "rotate-y-180" : ""
-                }`}
+                className={`relative w-full h-[400px] rounded-2xl border border-blue-800/30 transition-transform duration-500 transform ${isFlipped ? "rotate-y-180" : ""
+                  }`}
                 style={{
                   transformStyle: "preserve-3d",
                 }}

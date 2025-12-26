@@ -4,7 +4,7 @@ import "./vivitsu.css"; // Import your CSS file
 import { MorphingTextDemo } from "./morph";
 
 export default function Vivitsu() {
-  const letters = ["V", "I", "V", "I", "T", "S", "U", "-", "2", "5"];
+  const letters = ["V", "I", "V", "I", "T", "S", "U", "-", "2", "6"];
   const letterRefs = useRef([]);
   const buttonRef = useRef(null);
   const [columns, setColumns] = useState([]);
@@ -68,8 +68,8 @@ export default function Vivitsu() {
     });
 
     return () => {
-      button.removeEventListener("mouseenter", () => {});
-      button.removeEventListener("mouseleave", () => {});
+      button.removeEventListener("mouseenter", () => { });
+      button.removeEventListener("mouseleave", () => { });
     };
   }, []);
 
