@@ -3,28 +3,28 @@ import React, { useState } from "react";
 const Timeline = () => {
   const timelineEvents = [
     {
-      title: "Inauguration",
-      date: "Apr 9, 2025",
+      title: "Inauguration marks the official commencement of the Vivitsu Hackathon.",
+      date: "Jan 30, 2026",
       description:
-        "Submit a brief of your exploratory idea, including its purpose, functionality, and practical impact.",
+        "The event will begin with a welcome address, an overview of the hackathon objectives, rules, and timelines, followed by insights into the problem statements and evaluation criteria. This session sets the stage for innovation, collaboration, and an exciting competitive journey ahead.",
     },
     {
-      title: "Round 1",
-      date: "Apr 9, 2025",
+      title: "Round 1: First Evaluation (Idea Presentation Round)",
+      date: "Jan 30, 2026",
       description:
-        "Last day to submit your project proposal! Only the most promising ideas will move forward.",
+        "The teams have to present their idea/approach of the problem statement they have chosen, to the jury. Points will be awarded based on the approach and presentation.",
     },
     {
-      title: "Round 2",
-      date: "Apr 10, 2025",
+      title: "Round 2: Second Evaluation (Prototype Demonstration Round)",
+      date: "Jan 31, 2026",
       description:
-        "Selected teams will be notified to proceed to the prototype development phase.",
+        "This is the final round of evaluation and the teams have to present the working prototype of their idea to the jury. The jury will be evaluating all the prototypes and each domain will have a winner and runner up.",
     },
     {
-      title: "Closing Ceremony",
-      date: "Apr 10, 2025",
+      title: "Result Declaration",
+      date: "Jan 31, 2026",
       description:
-        "Develop a working prototype showcasing your idea’s key features and real-world impact.",
+        "The final results will be announced on-site at the hackathon venue after the completion of Round 2. Winners and runner-ups will be declared domain-wise, based on the jury’s evaluation of the working prototypes. Selected teams will be awarded Winner and Runner-Up titles for each domain.",
     },
   ];
 

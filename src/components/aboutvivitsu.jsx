@@ -1,4 +1,4 @@
-import  { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import NeonGradientCard from "./neongradientcard";
 
@@ -98,7 +98,7 @@ const AboutPage = () => {
         }}
       >
         <p style={{ fontSize: "1.2rem", opacity: 0.9 }}>
-          Welcome to VIVITSU 2025! We believe in innovation and creativity.
+          Welcome to VIVITSU 2026 We believe in innovation and creativity.
           Our goal is build innovative projects within 24 hours.
         </p>
       </div>
@@ -115,7 +115,7 @@ const AboutPage = () => {
       >
         {[
           { icon: "🌍", title: "Mode", text: "Offline" },
-          { icon: "📅", title: "Date", text: "9-10 April 2025" },
+          { icon: "📅", title: "Date", text: "30-31 January 2026" },
           { icon: "👥", title: "Registrations", text: "250+ participants" },
           { icon: "💰", title: "Prize Pool", text: "1 Lakh worth cash prizes" },
         ].map((item, index) => (

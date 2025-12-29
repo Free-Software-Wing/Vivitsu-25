@@ -110,7 +110,7 @@ const VivitsuDetails = () => {
                     <Trophy className="h-10 w-10" />
                   </div>
                   <h3 className="font-semibold font-poppins text-lg mb-1">
-                    ₹2,00,000
+                    ₹1,00,000
                   </h3>
                   <p className="">In prizes and sponsorships</p>
                 </motion.div>

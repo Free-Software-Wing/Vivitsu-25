@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function InfiniteScrollText() {
-  const text = "VIVITSU - 25 | 24 Hour Hackathon | Cash Prize: 2 Lakhs";
+  const text = "VIVITSU - 25 | 24 Hour Hackathon | Cash Prize: 1 Lakhs";
 
   return (
     <div className="w-full overflow-hidden py-4">
