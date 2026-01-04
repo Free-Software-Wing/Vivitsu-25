@@ -112,7 +112,7 @@ const VivitsuDetails = () => {
                   <h3 className="font-semibold font-poppins text-lg mb-1">
                     ₹1,00,000
                   </h3>
-                  <p className="">In prizes and sponsorships</p>
+                  <p className="">Prize Pool</p>
                 </motion.div>
 
                 <motion.div
@@ -145,7 +145,7 @@ const VivitsuDetails = () => {
               <div className="absolute -right-4 -bottom-4 bg-secondary/10 rounded-lg h-full w-full"></div>
 
               <img
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                src="https://res.cloudinary.com/dpa0sb1tm/image/upload/v1755935129/bf9ddfe4-e4d3-4a36-9711-5c551e61ea5d_aaaqf7.jpg"
                 alt="Vivitsu Hackathon"
                 className="rounded-lg shadow-xl w-full relative z-10 image-responsive"
               />
