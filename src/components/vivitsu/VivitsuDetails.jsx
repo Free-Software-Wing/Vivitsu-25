@@ -76,7 +76,7 @@ const VivitsuDetails = () => {
                     <Users className="h-10 w-10" />
                   </div>
                   <h3 className="font-semibold font-poppins text-lg mb-1">
-                    200+ Participants
+                    250+ Participants
                   </h3>
                   <p className="">From various colleges and backgrounds</p>
                 </motion.div>
@@ -93,7 +93,7 @@ const VivitsuDetails = () => {
                     <Briefcase className="h-10 w-10" />
                   </div>
                   <h3 className="font-semibold font-poppins text-lg mb-1">
-                    50+ Projects
+                    60+ Projects
                   </h3>
                   <p className="">Innovative solutions using FOSS</p>
                 </motion.div>
