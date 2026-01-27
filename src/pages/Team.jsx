@@ -21,17 +21,16 @@ const Team = () => {
     {
       title: "Tech Team",
       members: [
-        { name: "Avinash",designation: "Tech Lead", photo: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_3000,h_2000,g_auto/v1743778404/IMG_20250216_193159336_-_Avinash_Rajure_nmjsoq.jpg", linkedin: "https://www.linkedin.com/in/avinash-rajure" },
-        { name: "Soujanya Reddy",designation: "Tech Co-Lead", photo: "https://res.cloudinary.com/dpa0sb1tm/image/upload/v1743426467/IMG-20241106-WA0000_-_Soujanya_Narra_gp9chj.jpg", linkedin: "https://www.linkedin.com/in/soujanya-reddy-narra" },
-        { name: "Vengala Eshwar",designation: "Tech Member", photo: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_590,h_500,g_auto/v1743778215/WhatsApp_Image_2025-04-04_at_09.58.32_b7041897_-_Eshwar_Vengala_atqgoi.jpg", linkedin: "https://www.linkedin.com/in/eshwarvengala/" },
-        { name: "Swaransheel Chinthamalla",designation: "Tech Member", photo: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_2000,h_2000,g_auto/v1743426465/IMG_5164_-_swaransheel_Chinthamalla_d8jyti.jpg", linkedin: "https://www.linkedin.com/in/swaransheel-chinthamalla-741979265" },
+        { name: "Subham Kumar Shee",designation: "Tech Lead", photo: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_350,h_490,g_auto/v1743426464/A-20250216-WA0006_-_Subham_kumar_fhw4hr.jpg", linkedin: "https://www.linkedin.com/in/subham-kumar-shee-221886328/" },
+        { name: "Shaik Nada",designation: "OSC Lead / Tech Co-Lead", photo: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_800,h_900,g_auto/v1769523453/8fbb7ea8-76d9-45b4-a97d-6708fd740948_ihmvck.jpg", linkedin: "https://www.linkedin.com/in/shaik-nada-20831a30a/" },
       ]
     },
     {
       members: [
-        { name: "Naina Thippani",designation: "Tech Member", photo: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_800,h_700,g_auto/v1743426495/Screenshot_2025-01-31_202822_-_Naina_pankqc.png", linkedin: "https://www.linkedin.com/in/naina-thippani-99a095299/" },
-        { name: "Shaik Nada",designation: "Tech Member", photo: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_500,h_500,g_auto/v1743430281/WhatsApp_Image_2025-03-31_at_7.39.58_PM_fdsxpe.jpg", linkedin: "https://www.linkedin.com/in/shaik-nada-20831a30a/" },
-        { name: "Subham Kumar Shee",designation: "Tech Member", photo: "https://res.cloudinary.com/dpa0sb1tm/image/upload/c_crop,w_350,h_490,g_auto/v1743426464/A-20250216-WA0006_-_Subham_kumar_fhw4hr.jpg", linkedin: "https://www.linkedin.com/in/subham-kumar-221886328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+        { name: "Varun",designation: "Tech Member", photo: "", linkedin: "" },
+        { name: "Akshay Chandra",designation: "Tech Member", photo: "", linkedin: "" },
+        { name: "Rohit",designation: "Tech Member", photo: "", linkedin: "" },
+
       ]
     },
     {
